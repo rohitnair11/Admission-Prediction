@@ -3,10 +3,7 @@ import pandas as pd
 
 dataset = pd.read_csv('~/Path_to_/Admission_Predict.csv')
 dataset1= dataset.iloc[51:81, [0, 1,5,8]]
-#X = dataset.iloc[51:81, [0, 1,5]]
-#y = dataset.iloc[51:81, 8]
-#print(X)
-#print(y)
+
 #print dataset
 df = dataset1[["GRE Score", "TOEFL Score", "CGPA", "Chance_of_Admit_Y_N"]]
 print(df)
